@@ -11,7 +11,7 @@ class Lhx < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/OmerAhmedQuadri/localhoxt.com/releases/download/v0.1.0/lhx_0.1.0_darwin_amd64.tar.gz"
-      sha256 "db73896ba0f33c2a96081b3ee33c191389caf9ecb007711b93d22a9e458a1626"
+      sha256 "710aea24f4f5c5a0f45eed1c5a703a9a50a1e0dbbcca0dd72dbf56f02e411631"
 
       define_method(:install) do
         bin.install "lhx"
@@ -19,7 +19,7 @@ class Lhx < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/OmerAhmedQuadri/localhoxt.com/releases/download/v0.1.0/lhx_0.1.0_darwin_arm64.tar.gz"
-      sha256 "35626830065ca3448b455f05c1e6ab2181c0bff0a8c967c26920fee9ff44ff2f"
+      sha256 "546405dd118db64e87ed917e63653eb18f62b8619706dc3e4b2c16eca1afa4a9"
 
       define_method(:install) do
         bin.install "lhx"
@@ -30,14 +30,14 @@ class Lhx < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/OmerAhmedQuadri/localhoxt.com/releases/download/v0.1.0/lhx_0.1.0_linux_amd64.tar.gz"
-      sha256 "cb717af611e51f51987b39e9a848c78d939734af523101bfeecdeaefb1209f7e"
+      sha256 "de495d0ed1e43d16570307ae3fa87c79937d44d2931751526d498d6f2ec54960"
       define_method(:install) do
         bin.install "lhx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/OmerAhmedQuadri/localhoxt.com/releases/download/v0.1.0/lhx_0.1.0_linux_arm64.tar.gz"
-      sha256 "986c2593a49e4c08ee1e0a904b0bf4c758ed2611b1938d1f3d9c88b1eb93c193"
+      sha256 "05c2d00ce61a1104b65b19c59a13b462f549634667adc7355fcc655af35ce5b3"
       define_method(:install) do
         bin.install "lhx"
       end
